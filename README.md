@@ -20,7 +20,7 @@ Varsa bu ismi listede arayın, tüm harfleri büyük ve ters çevrilmiş şekild
 # Soru 3
 `data class Student(val name: String, val age: Int, val school: String)  
   
-val students = arrayListOf(  
+  val students = arrayListOf(  
     Student("Ahmet", 20, "Üniversite A"),  
     Student("Ayşe", 27, "Üniversite B"),  
     Student("Mehmet", 22, "Üniversite C"),  
