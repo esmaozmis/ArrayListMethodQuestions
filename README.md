@@ -1,26 +1,29 @@
 UpSchool tarafından verilen ödevdir.
 Kullanılan Dil : Kotlin
-SORULAR 👇
 
-# Soru 1
-5 isim içeren bir ArrayList oluşturun.
-Kullanıcıdan, aralarına virgül koyarak 3 isim girmesini isteyin.
-Bu girilen 3 isimlik String’i aradaki virgülleri kullanarak parçalayın ve listeye dönüştürün
-Bu listenin bol olup olmadığını kontrol edin.
-Boş değilse oluşturduğunuz 5 isimlik listeye ekleyin ve son halini konsola yazdırın.
+## SORULAR 👇
 
-# Soru 2
-`val names = arrayListOf("Sinem", "Ali", "Hümeyra", "Cem", "Gizem")`
+### Soru 1
+- 5 isim içeren bir ArrayList oluşturun.
+- Kullanıcıdan, aralarına virgül koyarak 3 isim girmesini isteyin.
+- Bu girilen 3 isimlik String’i aradaki virgülleri kullanarak parçalayın ve listeye dönüştürün
+- Bu listenin bol olup olmadığını kontrol edin.
+- Boş değilse oluşturduğunuz 5 isimlik listeye ekleyin ve son halini konsola yazdırın.
 
-Yukarıdaki isimler listesini kullanarak önce harflere göre listeyi sıralayın.
-Kullanıcıdan, 1 adet isim isteyin.
-Bu isim names listesinde var mı yok mu kontrol edin.
-Varsa bu ismi listede arayın, tüm harfleri büyük ve ters çevrilmiş şekilde konsola yazdırın.
+### Soru 2
+```kotlin
+val names = arrayListOf("Sinem", "Ali", "Hümeyra", "Cem", "Gizem")
+```
+- Yukarıdaki isimler listesini kullanarak önce harflere göre listeyi sıralayın.
+- Kullanıcıdan, 1 adet isim isteyin.
+- Bu isim names listesinde var mı yok mu kontrol edin.
+- Varsa bu ismi listede arayın, tüm harfleri büyük ve ters çevrilmiş şekilde konsola yazdırın.
 
-# Soru 3
-`data class Student(val name: String, val age: Int, val school: String)  
+### Soru 3
+```kotlin
+data class Student(val name: String, val age: Int, val school: String)  
   
-  val students = arrayListOf(  
+val students = arrayListOf(  
     Student("Ahmet", 20, "Üniversite A"),  
     Student("Ayşe", 27, "Üniversite B"),  
     Student("Mehmet", 22, "Üniversite C"),  
@@ -29,14 +32,15 @@ Varsa bu ismi listede arayın, tüm harfleri büyük ve ters çevrilmiş şekild
     Student("Feyza", 24, "Üniversite A"),  
     Student("Berkay", 22, "Üniversite B"),  
     Student("Caner", 26, "Üniversite A")  
-)`
+)
+```
+- İlk olarak en büyük ve en küçük yaşa sahip olan öğrencinin ismini ve kaçıncı indexte olduğunu konsola yazdırın.
+- Listede school değeri Üniversite A olanları filtreleyin.
+- Filtreleme işleminden dönen listeyi yaşları 25’ten büyükler ve küçükler olarak alt alta konsola yazdırın.
 
-İlk olarak en büyük ve en küçük yaşa sahip olan öğrencinin ismini ve kaçıncı indexte olduğunu konsola yazdırın.
-Listede school değeri Üniversite A olanları filtreleyin.
-Filtreleme işleminden dönen listeyi yaşları 25’ten büyükler ve küçükler olarak alt alta konsola yazdırın.
-
-# Soru 4
-`data class CoinResponse(val name: String, val coinId: String, val hashingAlgorithm: String, val description: String, val image: String, val currentPrice: Float, val priceChangePercentage24h: Float)
+### Soru 4
+```kotlin
+data class CoinResponse(val name: String, val coinId: String, val hashingAlgorithm: String, val description: String, val image: String, val currentPrice: Float, val priceChangePercentage24h: Float)
 
 data class CoinUI(val name: String, val coinId: String, val description: String, val image: String)
 
@@ -77,22 +81,23 @@ val coinList = arrayListOf(
         currentPrice = 0.5483,
         priceChangePercentage24h = 1.45
     )
-)`
+)
+```
+- Yukarida tipi CoinResponse olan bir ArrayList var.
+- Bu ArrayList’i tipi CoinUI olan bir listeye dönüştürün ve konsola yazdırın.
 
-Yukarida tipi CoinResponse olan bir ArrayList var.
-Bu ArrayList’i tipi CoinUI olan bir listeye dönüştürün ve konsola yazdırın.
-
-# Soru 5
-`data class Workers(val name: String, val salary: Double)
+### Soru 5
+```kotlin
+data class Workers(val name: String, val salary: Double)
 
 val workers = arrayListOf(
     Workers("Ahmet Yılmaz", 15000.0),
     Workers("Ayşe Kaya", 32000.0),
     Workers("Mehmet Demir", 29000.0),
     Workers("Fatma Şahin", 18500.0)
-)`
-
-Yukarıdaki işçiler listesini kullanarak her çalışana %35 zam yapın.
-Listeyi karıştırıp maaş değerine göre küçükten büyüğe sıralayın.
-En yüksek ve en düşük maaş alanları konsola yazdırın.
-Maaş ortalamasını hesaplayıp konsola yazdırın.
+)
+```
+- Yukarıdaki işçiler listesini kullanarak her çalışana %35 zam yapın.
+- Listeyi karıştırıp maaş değerine göre küçükten büyüğe sıralayın.
+- En yüksek ve en düşük maaş alanları konsola yazdırın.
+- Maaş ortalamasını hesaplayıp konsola yazdırın.
